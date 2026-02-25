@@ -1,0 +1,21 @@
+.cardapio-section {
+  display: flex;
+  max-width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cardapio-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cardapio-itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
