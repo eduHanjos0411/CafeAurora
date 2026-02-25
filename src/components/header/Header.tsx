@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header className="header">
-      <div className="logo">
+      <div className="logo-box">
         <img className="logo-image" src="LogoAurora.png" />
         <h1 className="header-title">Aurora Café</h1>
       </div>
@@ -26,13 +26,13 @@ export function Header() {
         <a href="#hero" className="header-nav-item" onClick={toggleMenu}>
           Início
         </a>
-        <a href="about" className="header-nav-item" onClick={toggleMenu}>
+        <a href="#about" className="header-nav-item" onClick={toggleMenu}>
           Sobre
         </a>
-        <a href="menu" className="header-nav-item" onClick={toggleMenu}>
+        <a href="#menu" className="header-nav-item" onClick={toggleMenu}>
           Cardápio
         </a>
-        <a href="contact" className="header-nav-item" onClick={toggleMenu}>
+        <a href="#contact" className="header-nav-item" onClick={toggleMenu}>
           Contato
         </a>
       </nav>
