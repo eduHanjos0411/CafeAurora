@@ -1,0 +1,9 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: left;
+}
