@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
-p, span, a, li {
+p, span, a, li, button {
   font-family: var(--body-font);
   color: var(--primary-color);
 }
@@ -25,4 +25,9 @@ body {
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
