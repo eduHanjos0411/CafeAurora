@@ -1,0 +1,22 @@
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 80px 0 ;
+}
+
+.testimonials-title {
+  color: var(--highlight-color);
+  margin-bottom: 40px;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+}
