@@ -1,16 +1,17 @@
-import './input.css'
+import type React from "react";
+import "./input.css";
 
-interface InputProps {
-  type?: string
-  placeholder?: string
-  label?: string
-}
+type InputProps = React.InputHTMLAttributes<HTMLInputElement> 
 
-export function Input(props: InputProps) {
+export function Input({ type, placeholder, ...rest }: InputProps) {
   return (
-    <label className="input-label">
-      {props.label || "Input"}
-      <input className="input" type={props.type || "text"} placeholder={props.placeholder || ""}/>
-    </label>
-  )
+
+      <input
+        {...rest}
+        className="input"
+        type={type || "text"}
+        placeholder={placeholder || ""}
+      />
+
+  );
 }
