@@ -18,5 +18,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 120px;
+  gap: 50px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+  }
 }
