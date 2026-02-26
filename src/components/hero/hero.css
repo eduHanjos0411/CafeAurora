@@ -25,6 +25,10 @@
   color: var(--highlight-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .hero-section {
     height: 100vh; /* ocupa tela inteira no mobile */
@@ -33,7 +37,8 @@
 
   .hero-title {
     font-size: 2.2rem;
-    line-height: 1.2;
+    line-height: 1.5;
+    padding: 0 50px;
   }
 
   .hero-subtitle {
