@@ -4,7 +4,8 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Café Expresso",
-    description: "Café expresso forte e encorpado, perfeito para começar o dia.",
+    description:
+      "Café expresso forte e encorpado, perfeito para começar o dia.",
     price: 4.99,
     imageUrl: "expresso.jpg",
     category: "bebida",
@@ -12,7 +13,8 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Cappuccino",
-    description: "Café cappuccino cremoso com espuma de leite, ideal para uma pausa relaxante.",
+    description:
+      "Café cappuccino cremoso com espuma de leite, ideal para uma pausa relaxante.",
     price: 6.49,
     imageUrl: "cappuccino.jpg",
     category: "bebida",
@@ -20,15 +22,17 @@ export const products: Product[] = [
   {
     id: 3,
     name: "Bolo de Chocolate",
-    description: "Bolo de chocolate macio e úmido, perfeito para acompanhar seu café.",
+    description:
+      "Bolo de chocolate macio e úmido, perfeito para acompanhar seu café.",
     price: 8.99,
     imageUrl: "bolochocolate.jpg",
     category: "doce",
-  }, 
+  },
   {
     id: 4,
     name: "Croissant",
-    description: "Croissant amanteigado e folhado, ideal para um café da manhã leve.",
+    description:
+      "Croissant amanteigado e folhado, ideal para um café da manhã leve.",
     price: 5.49,
     imageUrl: "croissant.jpg",
     category: "salgado",
@@ -36,7 +40,8 @@ export const products: Product[] = [
   {
     id: 5,
     name: "Torta de Limão",
-    description: "Torta de limão refrescante com uma base crocante, perfeita para sobremesa.",
+    description:
+      "Torta de limão refrescante com uma base crocante, perfeita para sobremesa.",
     price: 7.99,
     imageUrl: "tortalimao.jpg",
     category: "doce",
@@ -44,7 +49,8 @@ export const products: Product[] = [
   {
     id: 6,
     name: "Sanduíche Natural",
-    description: "Sanduíche natural com pão integral, recheado com frango, alface e tomate.",
+    description:
+      "Sanduíche natural com pão integral, recheado com frango, alface e tomate.",
     price: 9.49,
     imageUrl: "sandunatural.jpg",
     category: "salgado",
@@ -52,7 +58,8 @@ export const products: Product[] = [
   {
     id: 7,
     name: "Suco de Laranja",
-    description: "Suco de laranja fresco e natural, perfeito para acompanhar seu café da manhã.",
+    description:
+      "Suco de laranja fresco e natural, perfeito para acompanhar seu café da manhã.",
     price: 4.99,
     imageUrl: "sucolaranja.jpg",
     category: "bebida",
@@ -60,7 +67,8 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Muffin de Blueberry",
-    description: "Muffin de blueberry macio e saboroso, ideal para um lanche da tarde.",
+    description:
+      "Muffin de blueberry macio e saboroso, ideal para um lanche da tarde.",
     price: 6.49,
     imageUrl: "muffinblue.jpg",
     category: "doce",
@@ -68,7 +76,8 @@ export const products: Product[] = [
   {
     id: 9,
     name: "Pão de Queijo",
-    description: "Pão de queijo quentinho e saboroso, perfeito para acompanhar seu café.",
+    description:
+      "Pão de queijo quentinho e saboroso, perfeito para acompanhar seu café.",
     price: 5.99,
     imageUrl: "paodequeijo.jpg",
     category: "salgado",
@@ -80,5 +89,13 @@ export const products: Product[] = [
     price: 3.99,
     imageUrl: "chacamomila.jpg",
     category: "bebida",
+  },
+];
+
+export function filterProductByCategory(category: string | null) {
+  if (category) {
+    return products.filter((product) => product.category === category);
+  } else {
+    return products
   }
-]
+}
