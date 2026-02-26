@@ -1,8 +1,10 @@
-import type React from "react";
+import React from "react";
 
 import './button.css'
 
-export function Button({ children, ...rest}: {children: React.ReactNode, rest?: React.ButtonHTMLAttributes<HTMLButtonElement>}) {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
+
+export function Button({ children, ...rest}: ButtonProps) {
   return (
     <button  className='btn' {...rest}>{children}</button>
   )
